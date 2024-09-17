@@ -1,10 +1,11 @@
-const { db, Model, DataTypes } = require("../db/connection.js");
+const {db} = require('../db/connection')
+const {Sequelize} = require('sequelize')
 
 let Profile;
 Profile = db.define("Profile", {
-    bio: DataTypes.STRING,
-    profilePicture: DataTypes.STRING,
-    birthday: DataTypes.STRING,
+    bio: Sequelize.STRING,
+    profilePicture: Sequelize.STRING,
+    birthday: Sequelize.STRING,
 })
 
 

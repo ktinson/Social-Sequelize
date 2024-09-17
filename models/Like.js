@@ -1,8 +1,9 @@
-const { db, Model, DataTypes } = require("../db/connection.js");
+const {db} = require('../db/connection')
+const {Sequelize} = require('sequelize')
 
 let Like;
 Like = db.define("Like", {
-    reactionType: DataTypes.STRING,
-    createdAt: DataTypes.STRING,
+    reactionType: Sequelize.STRING,
+    createdAt: Sequelize.STRING,
 })
 module.exports = Like;
